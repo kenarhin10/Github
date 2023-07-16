@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reference</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  border: 2px solid grey;
+  background-color: goldenrod;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 22px;
+  border-radius: 65%;
+}
+
+.container span {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+
+
+    
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <ul class="menu">
+                <li><a href="index.html" class="menu-btn">Home</a></li>
+               
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+<h2> Reference</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="container">
+  <img src="mann.jpg" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>Arhin Kenneth saved us from a web disaster.</p>
+</div>
+
+<div class="container">
+  <img src="wom.jpg" alt="Avatar" style="width:90px">
+  <p><span>Rebecca Flex.</span> CEO at tobinco.</p>
+  <p>No one is better than Arhin Kenneth.</p>
+</div>
+<div class="container">
+    <img src="lolx.jpg" alt="Avatar" style="width:90px">
+    <p><span>Griffin Djan.</span> CEO at mtn.</p>
+    <p>Arhin Kenneth is a hard-working and a compitent leader.</p>
+  </div>
+
+</body>
+</html>
